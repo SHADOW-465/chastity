@@ -1,10 +1,11 @@
-import { AuthConfig } from "convex/server";
+// convex/auth.config.js
 
 export default {
   providers: [
     {
-      domain: process.env.CLERK_FRONTEND_API_URL,
-      applicationID: 'convex',
+      // Use the original variable name again
+      domain: process.env.CLERK_FRONTEND_API_URL, 
+      applicationID: "convex",
     },
   ],
-} satisfies AuthConfig;
+};
